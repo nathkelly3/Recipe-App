@@ -1,0 +1,123 @@
+.container {
+  border: lightgray 1px solid;
+  max-width: 400px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  border-bottom: 1px lightgray solid;
+  padding: 10px;
+}
+
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav a:first-child {
+  text-decoration: underline;
+  color: green;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.search {
+  /* box-sizing: border-box; this means keeping the original size of the box instead of using size once padding is added */
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* this stops the defualt behaviour turning box blue when mmouse is on it */
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: lightgrey;
+}
+
+.search-btn {
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+}
+
+.hero {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  margin: 0;
+}
+
+.hero p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  margin: 0;
+  margin: 10px 0px 30px 0px;
+}
+
+.recipe-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recipe-cards {
+  max-width: 190px;
+}
+
+.recipe-cards img {
+  border-radius: 10px;
+}
+
+.recipe-cards h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+.recipe-cards p {
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightgray;
+}
+
+footer {
+  padding: 3px;
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
